@@ -19,7 +19,13 @@
     },
 
     "require-dev": {
-        "twig/twig":" >=1.0,<2.0-dev"
+        "twig/twig":" >=1.0,<2.0-dev",
+        "liip/functional-test-bundle" : "dev-master",
+        "symfony/class-loader": "dev-master",
+        "symfony/filesystem": "dev-master",
+        "symfony/yaml": "dev-master",
+        "symfony/browser-kit": "dev-master",
+        "symfony/css-selector": "dev-master"
     },
 
     "suggest": {

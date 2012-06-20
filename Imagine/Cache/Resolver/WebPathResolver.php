@@ -37,7 +37,7 @@ class WebPathResolver extends AbstractFilesystemResolver implements CacheManager
         // correctly, hence make a 301 to proper location, so browser remembers
         if (file_exists($targetPath)) {
             $scriptName = $request->getScriptName();
-            if (strpos($browserPath, $scriptName) === 0) {
+            if ($scriptName && strpos($browserPath, $scriptName) === 0) {
                 // strip script name
                 $browserPath = substr($browserPath, strlen($scriptName));
             }
